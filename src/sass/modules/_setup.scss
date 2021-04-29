@@ -1,14 +1,16 @@
-// variables
+// variables - Colors
 $main-color     : #8844ee;
 $secondary-color:#b07dfb;
-$white          :#fefefe;
+$white          :#fafbfc;
+
+//  variables
+$width-limit :min(95%, 144rem);
 
 //
-
 :root {
 
    font-size  : 62.5%;
-   font-family: 'Montserrat', sans-serif;
+   font-family: 'EB Garamond', serif;
 }
 
 * {
@@ -35,6 +37,11 @@ header#header {
    grid-area: header;
 }
 
+section#main__content {
+
+   grid-area: maincontent;
+}
+
 section#sidebar {
 
    grid-area: sidebar;
@@ -43,6 +50,45 @@ section#sidebar {
 article#article {
 
    grid-area: article;
+
+   .title {
+      grid-template-areas: title;
+   }
+
+   .characteristics {
+
+      grid-area: characteristics;
+   }
+
+   .introduction {
+      grid-area: introduction;
+   }
+
+   .image-one {
+      grid-area: imageone;
+   }
+
+   .highlight {
+
+      grid-area: highlight;
+   }
+
+   .image-two {
+      grid-area: imagetwo;
+   }
+
+   .about-wolf__one {
+      grid-area: aboutwolfone;
+   }
+
+   .about-wolf__two {
+      grid-area: aboutwolftwo;
+   }
+
+   .quote {
+
+      grid-area: quote;
+   }
 }
 
 section#others {

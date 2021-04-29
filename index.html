@@ -5,7 +5,7 @@
    <!--  -->
    <meta charset="UTF-8">
    <link rel="preconnect" href="https://fonts.gstatic.com">
-   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="src/css/app.css">
 
    <!--  -->
@@ -15,34 +15,109 @@
    <!--  -->
    <title> Wildbeast - Projeto CSS Grid Layout </title>
 </head>
+<!-- style="font-size: -0px; position: absolute; top: 0; left: 0;" -->
 
 <body>
    <main id="main">
 
       <header id="header">
-         <h2 style="font-size: -0px; position: absolute; top: 0; left: 0;"> cabeçalho do site </h2>
-         <div class="header__content">
-            <h1 title="Logo Wildbeast" class="logo">
-               <img src="https://origamid.com/projetos/wildbeast/img/wildbeast.svg">
-            </h1>
-            <nav title="Menu de navegação">
+         <h2 style="font-size: -0px; position: absolute; top: 0; left: 0;">
+            cabeçalho do site
+         </h2>
 
+         <div class="header__content">
+
+            <h2 title="Logo Wildbeast" class="logo">
+               <img src="https://origamid.com/projetos/wildbeast/img/wildbeast.svg">
+            </h2>
+            <nav title="Menu de navegação">
                <ul>
+
                   <li><a href="#">sobre</a></li>
                   <li><a href="#">animais</a></li>
                   <li><a href="#">contato</a></li>
                </ul>
             </nav>
+
          </div>
+
       </header>
 
-      <section id="sidenav">
-         <h2 style="font-size: -0px; position: absolute;"> menu lateral </h2>
-      </section>
-      <article id="article">
+      <section id="main__content">
 
-      </article>
-      <section class="others">
+         <section id="sidenav">
+            <h2 style="font-size: -0px; position: absolute;"> menu lateral </h2>
+         </section>
+
+         <article id="article">
+
+            <div class="title">
+               <h1>Lobo Cinza</h1>
+               <span>da família canis lupus</span>
+            </div>
+
+            <div class="characteristics">
+               <h2 style="font-size: -0px; position: absolute; top: 0; left: 0;">
+                  caracteristicas sobre o lobo
+               </h2>
+
+               <div class="weight characteristics__block">
+                  <h3>72</h3>
+                  <span>kilos</span>
+               </div>
+
+               <div class="age characteristics__block">
+                  <h3>13</h3>
+                  <span>anos</span>
+               </div>
+
+            </div>
+
+            <p class="introduction">
+               O lobo (também chamado de lobo-cinzento; nome científico: Canis lupus) é uma espécie de mamífero canídeo
+               do gênero
+               Canis. É um sobrevivente da Era do Gelo, originário do Pleistoceno Superior, cerca de 300 mil anos atrás.
+               É o maior
+               membro remanescente selvagem da família canidae.
+            </p>
+
+            <img src="https://origamid.com/projetos/wildbeast/img/wolf1.jpg"
+               alt="imagem de um Lobo Cinza em posição de uivo " class="image-one">
+
+            <p class="highlight">
+               O uivo é o meio através do qual os lobos mantêm contato entre si, já que trabalham em
+               grupo e usam deste meio de comunicação para se encontrarem quando se vêem. Os uivos são um ruído básico e
+               desagradável aos ouvidos humanos.
+            </p>
+
+            <img src="https://origamid.com/projetos/wildbeast/img/wolf2.jpg" alt="imagem de dois Lobos"
+               class="image-two">
+
+            <p class="about-wolf about-wolf__one">
+               O sequenciamento de DNA e estudos genéticos reafirmam que o lobo-cinzento é ancestral do cão doméstico
+               (Canis lupus familiaris), contudo alguns aspectos desta afirmação têm sido questionados recentemente. Uma
+               série de outras subespécies do lobo-cinzento foram identificadas, embora o número real de subespécies
+               ainda esteja em discussão.
+            </p>
+
+            <p class="about-wolf about-wolf__two">
+               Os lobos-cinzentos são tipicamente predadores ápice nos ecossistemas que ocupam. Embora não sejam tão
+               adaptáveis à
+               presença humana como geralmente ocorre com as demais espécies de canídeos,[3] os lobos se desenvolveram
+               em diversos
+               ambientes, como florestas temperadas, desertos, montanhas, tundras, taigas, campos e até mesmo em algumas
+               áreas urbanas.
+            </p>
+
+            <blockquote class="quote">
+               “Há algo no uivar do lobo que tira um homem do aqui e agora e o transporta para uma floresta da mente.”
+            </blockquote>
+
+         </article>
+
+         <section id="others">
+
+         </section>
 
       </section>
 

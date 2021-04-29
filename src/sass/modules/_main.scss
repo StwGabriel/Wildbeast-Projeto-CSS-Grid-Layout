@@ -3,13 +3,21 @@ main#main {
 
    display              : grid;
    grid-template-columns: 1fr 5fr 1fr;
+   grid-template-rows   : .5fr 6fr .5fr;
    grid-template-areas  :
 
       'header header header'
-      'sidebar article others'
+      'maincontent maincontent maincontent'
       'footer footer footer'
    ;
 
    width     : 100%;
    min-height: 100vh;
 }
+
+/**/
+@import 'header';
+/**/
+@import 'main__content';
+/**/
+@import 'footer'
