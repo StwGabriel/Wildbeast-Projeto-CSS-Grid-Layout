@@ -1,0 +1,56 @@
+// variables
+$main-color     : #8844ee;
+$secondary-color:#b07dfb;
+$white          :#fefefe;
+
+//
+
+:root {
+
+   font-size  : 62.5%;
+   font-family: 'Montserrat', sans-serif;
+}
+
+* {
+
+   box-sizing: border-box;
+
+   padding: 0;
+   margin : 0;
+}
+
+body {
+   height: 100%;
+}
+
+li,
+a {
+   list-style     : none;
+   text-decoration: none;
+}
+
+//
+header#header {
+
+   grid-area: header;
+}
+
+section#sidebar {
+
+   grid-area: sidebar;
+}
+
+article#article {
+
+   grid-area: article;
+}
+
+section#others {
+
+   grid-area: others;
+}
+
+footer#footer {
+
+   grid-area: footer;
+}

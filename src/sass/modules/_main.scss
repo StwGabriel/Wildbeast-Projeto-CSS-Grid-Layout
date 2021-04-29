@@ -1,0 +1,15 @@
+//
+main#main {
+
+   display              : grid;
+   grid-template-columns: 1fr 5fr 1fr;
+   grid-template-areas  :
+
+      'header header header'
+      'sidebar article others'
+      'footer footer footer'
+   ;
+
+   width     : 100%;
+   min-height: 100vh;
+}
