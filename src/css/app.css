@@ -15,9 +15,11 @@ body {
 }
 
 li,
-a {
+a,
+p {
   list-style: none;
   text-decoration: none;
+  letter-spacing: -0.005em;
 }
 
 header#header {
@@ -53,14 +55,14 @@ article#article .highlight {
 article#article .image-two {
   grid-area: imagetwo;
 }
-article#article .about-wolf__one {
-  grid-area: aboutwolfone;
-}
-article#article .about-wolf__two {
-  grid-area: aboutwolftwo;
-}
 article#article .quote {
   grid-area: quote;
+}
+article#article .attributes {
+  grid-area: attributes;
+}
+article#article .image-three {
+  grid-area: imagethree;
 }
 
 section#others {
@@ -73,9 +75,10 @@ footer#footer {
 
 /**/
 main#main {
+  background: red;
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-  grid-template-rows: 0.5fr 6fr 0.5fr;
+  grid-template-rows: auto 10fr auto;
   grid-template-areas: "header header header" "maincontent maincontent maincontent" "footer footer footer";
   width: 100%;
   min-height: 100vh;
@@ -146,7 +149,8 @@ section#main__content {
   grid-template-columns: 1fr 4fr 1fr;
   grid-template-rows: 5fr;
   grid-template-areas: "sidebar article others";
-  gap: 2rem;
+  gap: clamp(1.5rem, 2.96vw, 5rem);
+  row-gap: 0;
   margin: 0 auto;
 }
 
@@ -159,13 +163,13 @@ section#sidenav {
 /**/
 article#article {
   background: #fff;
+  border-radius: 0 0 1rem 1rem;
+  box-shadow: 0 0 25px #0003;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(8, auto);
-  grid-template-areas: "title         characteristics" "colwide       colwide" "introduction introduction" "imageone      highlight" "imageone      imagetwo" "aboutwolfone  aboutwolftwo" "quote         quote" "a a";
+  grid-template-areas: "title         characteristics" "introduction introduction" "imageone      highlight" "imageone      imagetwo" "p1             p1" "quote         quote" "attributes    p2" "attributes    p2" "imagethree imagethree";
   gap: 4rem;
   position: relative;
-  padding: 1rem 2rem;
+  padding: 2rem clamp(1.5rem, 3vw, 5rem);
 }
 article#article img {
   border-radius: 1rem;
@@ -179,11 +183,10 @@ article#article .title {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-bottom: 2rem;
 }
 article#article .title span {
   font-size: 1.2rem;
-  font-size: clamp(.5rem, 1.2vw, 2rem);
+  font-size: clamp(16px, 1.4vw, 2rem);
   font-style: italic;
 }
 article#article .characteristics {
@@ -214,35 +217,80 @@ article#article .characteristics .characteristics__block span {
 article#article .characteristics .characteristics__block + .characteristics__block {
   margin-left: 2rem;
 }
-article#article .introduction {
-  color: #000a;
-  font-size: clamp(1rem, 1.4vw, 3rem);
-  padding: 5rem 0;
+article#article .about-wolf {
+  color: #0009;
+  font-size: clamp(20px, 1.7vw, 3rem);
 }
 article#article .image-one {
   border-radius: 1rem;
   width: 100%;
-  justify-self: flex-end;
+  margin: auto;
+}
+article#article .image-two {
+  width: 100%;
+  margin: auto;
 }
 article#article .highlight {
   color: #b07dfb;
-  font-size: 1.5rem;
-  font-size: clamp(.5rem, 1.4vw, 2rem);
-  padding: 1rem 0;
-}
-article#article .about-wolf {
-  color: #000a;
-  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-size: 2rem;
+  font-size: clamp(20px, 1.1vw, 3rem);
 }
 article#article .quote {
   background: linear-gradient(135deg, #8844ee, #b07dfb);
   border-radius: 1rem;
-  color: #fff;
-  font-size: clamp(1rem, 1.4vw, 3rem);
+  box-shadow: 0 0 25px #0004;
+  color: #fafbfc;
+  font-size: clamp(20px, 1.9vw, 3rem);
   text-align: center;
-  padding: 2rem 15rem;
+  padding: 3rem 15rem;
+}
+article#article .attributes {
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+  border-radius: 1rem;
+  box-shadow: 0 0 25px #0004;
+  color: #fafbfc;
+  font-size: 2rem;
+  font-family: Courier, monospace;
+  padding: 2rem;
+  margin: auto;
+}
+article#article .attributes li {
+  padding: 1.5rem;
+}
+article#article .attributes li + li {
+  border-top: solid 1px #fff8;
+}
+article#article .image-three {
+  width: 100%;
 }
 
+@media only screen and (max-width: 600px) {
+  article#article {
+    background: #fff;
+    border-radius: 0 0 1rem 1rem;
+    box-shadow: 0 0 25px #0003;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "title" "characteristics" "introduction " "imageone" "highlight" "imagetwo" "p1" "p1" "quote" "attributes" "p2" "p2" "imagethree";
+  }
+  article#article .characteristics {
+    display: flex;
+    justify-content: flex-start;
+  }
+  article#article .image-one {
+    width: 80%;
+  }
+  article#article .highlight {
+    text-align: center;
+    padding: 2rem;
+  }
+  article#article .image-two {
+    width: 80%;
+  }
+  article#article .quote {
+    padding: 3rem 5rem;
+  }
+}
 /**/
 section#others {
   background: blue;
@@ -250,6 +298,18 @@ section#others {
   width: 100%;
 }
 
+@media (max-width: 1200px) {
+  section#main__content {
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: "sidebar article " "others others";
+  }
+}
+@media (max-width: 760px) {
+  section#main__content {
+    grid-template-columns: 1fr;
+    grid-template-areas: "sidebar" "article" "others";
+  }
+}
 /**/
 footer#footer {
   color: #fff;

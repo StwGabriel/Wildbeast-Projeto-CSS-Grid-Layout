@@ -26,9 +26,11 @@ body {
 }
 
 li,
-a {
+a,
+p {
    list-style     : none;
    text-decoration: none;
+   letter-spacing : -0.005em;
 }
 
 //
@@ -77,17 +79,18 @@ article#article {
       grid-area: imagetwo;
    }
 
-   .about-wolf__one {
-      grid-area: aboutwolfone;
-   }
-
-   .about-wolf__two {
-      grid-area: aboutwolftwo;
-   }
-
    .quote {
 
       grid-area: quote;
+   }
+
+   .attributes {
+
+      grid-area: attributes;
+   }
+
+   .image-three {
+      grid-area: imagethree;
    }
 }
 

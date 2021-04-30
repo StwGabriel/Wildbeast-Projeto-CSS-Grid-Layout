@@ -1,9 +1,11 @@
 //
 main#main {
 
+   background: red;
+
    display              : grid;
    grid-template-columns: 1fr 5fr 1fr;
-   grid-template-rows   : .5fr 6fr .5fr;
+   grid-template-rows   : auto 10fr auto;
    grid-template-areas  :
 
       'header header header'

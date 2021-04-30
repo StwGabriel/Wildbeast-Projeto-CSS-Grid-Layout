@@ -1,0 +1,218 @@
+//
+article#article {
+
+   background   : #fff;
+   border-radius: 0 0 1rem 1rem;
+   box-shadow   : 0 0 25px #0003;
+
+   display: grid;
+   grid-template-areas:
+
+      'title         characteristics'
+      'introduction introduction'
+      'imageone      highlight'
+      'imageone      imagetwo'
+      'p1             p1'
+      'quote         quote'
+      'attributes    p2'
+      'attributes    p2'
+      'imagethree imagethree'
+   ;
+   gap: 4rem;
+
+   position: relative;
+
+   padding: 2rem clamp(1.5rem, 3vw, 5rem);
+
+   img {
+
+      border-radius: 1rem;
+   }
+
+   .title {
+
+      color    : $secondary-color;
+      font-size: 4.5rem;
+      font-size: clamp(3rem, 10vw, 5rem);
+
+      font-weight: 900;
+
+      display        : flex;
+      flex-direction : column;
+      justify-content: flex-start;
+      align-items    : flex-start;
+
+      span {
+
+         font-size : 1.2rem;
+         font-size : clamp(16px, 1.4vw, 2rem);
+         font-style: italic;
+      }
+   }
+
+   .characteristics {
+
+      display        : flex;
+      justify-content: flex-end;
+
+      .characteristics__block {
+
+         border-radius: 0 0 .5rem .5rem;
+         box-shadow   : 0 0 10px #0003;
+         color        : $secondary-color;
+         text-align   : center;
+
+         width : 7rem;
+         height: 8.7rem;
+
+         h3 {
+
+            background   : linear-gradient(135deg, $main-color, $secondary-color);
+            border-radius: .5rem .5rem 0 0;
+
+            color    : #fff7;
+            font-size: 5rem;
+         }
+
+         span {
+
+            border       : solid 1px #b07dfb55;
+            border-radius: 0 0 .5rem .5rem;
+
+            font-size: 1.5rem;
+
+            display: block;
+            width  : 100%;
+         }
+      }
+
+      .characteristics__block+.characteristics__block {
+
+         margin-left: 2rem;
+      }
+   }
+
+   .about-wolf {
+
+      color    : #0009;
+      font-size: clamp(20px, 1.7vw, 3rem)
+   }
+
+   .image-one {
+
+      border-radius: 1rem;
+      width        : 100%;
+      margin       : auto;
+   }
+
+   .image-two {
+
+      width : 100%;
+      margin: auto;
+   }
+
+   .highlight {
+
+      color    : $secondary-color;
+      font-size: 2rem;
+      font-size: clamp(20px, 1.1vw, 3rem);
+   }
+
+   .quote {
+
+      background   : linear-gradient(135deg, $main-color, $secondary-color);
+      border-radius: 1rem;
+      box-shadow   : 0 0 25px #0004;
+
+      color     : $white;
+      font-size : clamp(20px, 1.9vw, 3rem);
+      text-align: center;
+
+      padding: 3rem 15rem;
+   }
+
+   .attributes {
+
+      background   : linear-gradient(135deg, $main-color, $secondary-color);
+      border-radius: 1rem;
+      box-shadow   : 0 0 25px #0004;
+
+      color      : $white;
+      font-size  : 2rem;
+      font-family: Courier, monospace;
+
+      padding: 2rem;
+      margin : auto;
+
+
+      li {
+
+         padding: 1.5rem;
+      }
+
+      li+li {
+
+         border-top: solid 1px #fff8;
+      }
+   }
+
+   .image-three {
+      width: 100%;
+   }
+}
+
+@media only screen and (max-width:600px) {
+
+   article#article {
+
+      background   : #fff;
+      border-radius: 0 0 1rem 1rem;
+      box-shadow   : 0 0 25px #0003;
+
+      display              : grid;
+      grid-template-columns: 1fr;
+      grid-template-areas  :
+
+         'title'
+         'characteristics'
+         'introduction '
+         'imageone'
+         'highlight'
+         'imagetwo'
+         'p1'
+         'p1'
+         'quote'
+         'attributes'
+         'p2'
+         'p2'
+         'imagethree'
+      ;
+
+      .characteristics {
+
+         display        : flex;
+         justify-content: flex-start;
+      }
+
+      .image-one {
+
+         width: 80%;
+      }
+
+      .highlight {
+
+         text-align: center;
+         padding   : 2rem;
+      }
+
+      .image-two {
+
+         width: 80%;
+      }
+
+      .quote {
+
+         padding: 3rem 5rem;
+      }
+   }
+}

@@ -9,15 +9,44 @@ section#main__content {
    grid-template-columns: 1fr 4fr 1fr;
    grid-template-rows   : 5fr;
    grid-template-areas  :
+
       'sidebar article others'
    ;
-   gap: 2rem;
-
-   margin: 0 auto;
+   gap    : clamp(1.5rem, 2.96vw, 5rem);
+   row-gap: 0;
+   margin : 0 auto;
 }
 
 @import 'sidebar';
 /**/
-@import 'articles';
+@import 'article';
 /**/
 @import 'others';
+
+@media (max-width:1200px) {
+   section#main__content {
+
+
+      grid-template-columns: 1fr 4fr;
+      grid-template-areas  :
+
+         'sidebar article '
+         'others others'
+      ;
+   }
+
+}
+
+@media (max-width:760px) {
+
+   section#main__content {
+
+      grid-template-columns: 1fr;
+      grid-template-areas  :
+
+         'sidebar'
+         'article'
+         'others'
+      ;
+   }
+}
