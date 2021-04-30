@@ -141,7 +141,7 @@ header#header nav ul li + li {
 }
 /**/
 section#main__content {
-  background: #fafbfc;
+  background: transparent;
   width: 95%;
   width: min(95%, 144rem);
   display: grid;
@@ -173,8 +173,8 @@ section#sidebar ul li {
 }
 section#sidebar ul li a {
   display: flex;
-  height: clamp(12rem, 15vw, 17rem);
-  width: clamp(12rem, 15vw, 17rem);
+  height: clamp(14rem, 15vw, 20rem);
+  width: clamp(14rem, 15vw, 20rem);
 }
 section#sidebar ul li a img {
   width: 70%;
@@ -331,15 +331,55 @@ article#article .image-three {
 }
 /**/
 section#others {
-  background: #0005;
-  height: 100%;
-  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 0;
+}
+section#others ul {
+  background: transparent;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+  z-index: 100;
+}
+section#others ul li {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px #0003;
+  margin: auto;
+}
+section#others ul li a {
+  background-image: url(https://origamid.com/projetos/wildbeast/img/anuncio-2.jpg);
+  background-size: cover;
+  background-position: right;
+  border-radius: 1rem;
+  display: flex;
+  height: clamp(12rem, 15vw, 17rem);
+  width: clamp(12rem, 15vw, 17rem);
 }
 
+@media only screen and (max-width: 1200px) {
+  section#others {
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: scroll;
+  }
+  section#others ul {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+  section#others ul li a {
+    height: clamp(15rem, 20vw, 20rem);
+    width: clamp(15rem, 20vw, 20rem);
+  }
+}
 @media (max-width: 1200px) {
   section#main__content {
     grid-template-columns: 1fr 4fr;
-    grid-template-areas: "sidebar article " "others others";
+    grid-template-areas: "sidebar article " "sidebar others";
   }
 }
 @media (max-width: 760px) {
