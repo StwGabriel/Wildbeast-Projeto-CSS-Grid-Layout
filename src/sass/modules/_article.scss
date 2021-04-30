@@ -31,7 +31,7 @@ article#article {
 
    .title {
 
-      color    : $secondary-color;
+      color    : $main-color;
       font-size: 4.5rem;
       font-size: clamp(3rem, 10vw, 5rem);
 
@@ -59,7 +59,7 @@ article#article {
 
          border-radius: 0 0 .5rem .5rem;
          box-shadow   : 0 0 10px #0003;
-         color        : $secondary-color;
+         color        : $main-color;
          text-align   : center;
 
          width : 7rem;
@@ -113,7 +113,7 @@ article#article {
 
    .highlight {
 
-      color    : $secondary-color;
+      color    : $main-color;
       font-size: 2rem;
       font-size: clamp(20px, 1vw, 3rem);
    }

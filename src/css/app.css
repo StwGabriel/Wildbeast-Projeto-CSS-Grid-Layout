@@ -173,8 +173,8 @@ section#sidebar ul li {
 }
 section#sidebar ul li a {
   display: flex;
-  height: clamp(14rem, 15vw, 20rem);
-  width: clamp(14rem, 15vw, 20rem);
+  height: clamp(12rem, 12vw, 20rem);
+  width: clamp(12rem, 12vw, 20rem);
 }
 section#sidebar ul li a img {
   width: 70%;
@@ -213,7 +213,7 @@ article#article img {
   border-radius: 1rem;
 }
 article#article .title {
-  color: #b07dfb;
+  color: #8844ee;
   font-size: 4.5rem;
   font-size: clamp(3rem, 10vw, 5rem);
   font-weight: 900;
@@ -234,7 +234,7 @@ article#article .characteristics {
 article#article .characteristics .characteristics__block {
   border-radius: 0 0 0.5rem 0.5rem;
   box-shadow: 0 0 10px #0003;
-  color: #b07dfb;
+  color: #8844ee;
   text-align: center;
   width: 7rem;
   height: 8.7rem;
@@ -269,7 +269,7 @@ article#article .image-two {
   margin: auto;
 }
 article#article .highlight {
-  color: #b07dfb;
+  color: #8844ee;
   font-size: 2rem;
   font-size: clamp(20px, 1vw, 3rem);
 }
@@ -356,8 +356,8 @@ section#others ul li a {
   background-position: right;
   border-radius: 1rem;
   display: flex;
-  height: clamp(12rem, 15vw, 17rem);
-  width: clamp(12rem, 15vw, 17rem);
+  height: clamp(15rem, 20vw, 20rem);
+  width: clamp(15rem, 20vw, 20rem);
 }
 
 @media only screen and (max-width: 1200px) {
@@ -390,8 +390,13 @@ section#others ul li a {
 }
 /**/
 footer#footer {
-  color: #fff;
   background: #8844ee;
+  color: #fff;
+  font-size: clamp(1.5rem, 1.5vw, 3rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
 }
 
 /*# sourceMappingURL=app.css.map */
