@@ -1,9 +1,8 @@
 //
 article#article {
 
-   background   : #fff;
-   border-radius: 0 0 1rem 1rem;
-   box-shadow   : 0 0 25px #0003;
+   background: #fff;
+   box-shadow: 0 0 25px #0003;
 
    display: grid;
    grid-template-areas:
@@ -161,12 +160,20 @@ article#article {
    }
 }
 
+@media only screen and (max-width:1200px) {
+
+   article#article {
+
+      border-radius: 0 0 1rem 1rem;
+   }
+}
+
 @media only screen and (max-width:600px) {
 
    article#article {
 
       background   : #fff;
-      border-radius: 0 0 1rem 1rem;
+      border-radius: 1rem;
       box-shadow   : 0 0 25px #0003;
 
       display              : grid;
