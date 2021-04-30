@@ -394,6 +394,7 @@ footer#footer {
   color: #fff;
   font-size: clamp(1.5rem, 1.5vw, 3rem);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 5rem;
