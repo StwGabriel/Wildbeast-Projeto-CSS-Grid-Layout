@@ -75,7 +75,6 @@ footer#footer {
 
 /**/
 main#main {
-  background: #fafbfc;
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
   grid-template-rows: auto 10fr auto;
@@ -142,7 +141,7 @@ header#header nav ul li + li {
 }
 /**/
 section#main__content {
-  background: transparent;
+  background: #fafbfc;
   width: 95%;
   width: min(95%, 144rem);
   display: grid;
@@ -202,6 +201,7 @@ section#sidebar ul li a:hover {
 /**/
 article#article {
   background: #fff;
+  border-radius: 0 0 1rem 1rem;
   box-shadow: 0 0 25px #0003;
   display: grid;
   grid-template-areas: "title         characteristics" "introduction introduction" "imageone      highlight" "imageone      imagetwo" "p1             p1" "quote         quote" "attributes    p2" "attributes    p2" "imagethree imagethree";
@@ -302,15 +302,10 @@ article#article .image-three {
   width: 100%;
 }
 
-@media only screen and (max-width: 1200px) {
-  article#article {
-    border-radius: 0 0 1rem 1rem;
-  }
-}
 @media only screen and (max-width: 600px) {
   article#article {
     background: #fff;
-    border-radius: 1rem;
+    border-radius: 0 0 1rem 1rem;
     box-shadow: 0 0 25px #0003;
     display: grid;
     grid-template-columns: 1fr;
@@ -336,55 +331,15 @@ article#article .image-three {
 }
 /**/
 section#others {
-  position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: 2rem 0;
-}
-section#others ul {
-  background: transparent;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  gap: 2rem;
-  z-index: 100;
-}
-section#others ul li {
-  background: #fff;
-  border-radius: 1rem;
-  box-shadow: 0 0 20px #0003;
-  margin: auto;
-}
-section#others ul li a {
-  background-image: url(https://origamid.com/projetos/wildbeast/img/anuncio-2.jpg);
-  background-size: cover;
-  background-position: right;
-  border-radius: 1rem;
-  display: flex;
-  height: clamp(12rem, 15vw, 17rem);
-  width: clamp(12rem, 15vw, 17rem);
+  background: #0005;
+  height: 100%;
+  width: 100%;
 }
 
-@media only screen and (max-width: 1200px) {
-  section#others {
-    width: 100%;
-    margin: 0 auto;
-    overflow-x: scroll;
-  }
-  section#others ul {
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
-  }
-  section#others ul li a {
-    height: clamp(15rem, 20vw, 20rem);
-    width: clamp(15rem, 20vw, 20rem);
-  }
-}
 @media (max-width: 1200px) {
   section#main__content {
     grid-template-columns: 1fr 4fr;
-    grid-template-areas: "sidebar article " "sidebar others";
+    grid-template-areas: "sidebar article " "others others";
   }
 }
 @media (max-width: 760px) {

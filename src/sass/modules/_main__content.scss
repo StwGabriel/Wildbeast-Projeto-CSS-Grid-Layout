@@ -1,6 +1,6 @@
 section#main__content {
 
-   background: transparent;
+   background: $white;
 
    width: 95%;
    width: $width-limit;
@@ -31,7 +31,7 @@ section#main__content {
       grid-template-areas  :
 
          'sidebar article '
-         'sidebar others'
+         'others others'
       ;
    }
 
