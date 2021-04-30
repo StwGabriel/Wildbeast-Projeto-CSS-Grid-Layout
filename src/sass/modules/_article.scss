@@ -95,7 +95,7 @@ article#article {
    .about-wolf {
 
       color    : #0009;
-      font-size: clamp(20px, 1.7vw, 3rem)
+      font-size: clamp(20px, 1.5vw, 2.5rem)
    }
 
    .image-one {
@@ -115,7 +115,7 @@ article#article {
 
       color    : $secondary-color;
       font-size: 2rem;
-      font-size: clamp(20px, 1.1vw, 3rem);
+      font-size: clamp(20px, 1vw, 3rem);
    }
 
    .quote {

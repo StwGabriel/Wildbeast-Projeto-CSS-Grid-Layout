@@ -257,7 +257,7 @@ article#article .characteristics .characteristics__block + .characteristics__blo
 }
 article#article .about-wolf {
   color: #0009;
-  font-size: clamp(20px, 1.7vw, 3rem);
+  font-size: clamp(20px, 1.5vw, 2.5rem);
 }
 article#article .image-one {
   border-radius: 1rem;
@@ -271,7 +271,7 @@ article#article .image-two {
 article#article .highlight {
   color: #b07dfb;
   font-size: 2rem;
-  font-size: clamp(20px, 1.1vw, 3rem);
+  font-size: clamp(20px, 1vw, 3rem);
 }
 article#article .quote {
   background: linear-gradient(135deg, #8844ee, #b07dfb);
