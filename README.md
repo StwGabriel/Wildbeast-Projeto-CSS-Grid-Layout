@@ -4,7 +4,7 @@ projeto feito pela origamid e codado por mim
 [veja o site em ação](https://stwgabriel.github.io/Wildbeast-Projeto-CSS-Grid-Layout/)
 
 ## Descrição
-Site desenvolvido com display grid, com o intuito de aprimorar os meus conhecimentos em Grid
+Site desenvolvido com display grid com o intuito de aprimorar os meus conhecimentos em Grid.
 
 ### linguagens e ferramentas utilizadas
 
