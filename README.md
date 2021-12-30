@@ -1,4 +1,4 @@
-# Wildbeast-Projeto-CSS-Grid-Layout
+# Wildbeast Projeto CSS Grid Layout
 projeto feito pela origamid e codado por mim
 
 [veja o site em ação](https://stwgabriel.github.io/wildbeast-css-grid/)
